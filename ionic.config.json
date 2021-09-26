@@ -1,0 +1,7 @@
+{
+  "name": "projectCardinal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
