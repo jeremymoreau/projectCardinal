@@ -22,10 +22,17 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/style.css';
+
+import Vue3TouchEvents from "vue3-touch-events";
+import VueTippy from 'vue-tippy'
+import 'tippy.js/dist/tippy.css'
 
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(Vue3TouchEvents)
+  .use(VueTippy);
   
 router.isReady().then(() => {
   app.mount('#app');

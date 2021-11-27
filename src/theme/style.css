@@ -1,0 +1,11 @@
+.header-logo {
+    content: url("/assets/icon/projectCardinal_logo.svg");
+    display: block;
+    height: 35px;
+    padding-right: 3px;
+    margin-left: auto;
+  }
+  .header-box {
+    display: flex;
+    align-items: center;
+  }
