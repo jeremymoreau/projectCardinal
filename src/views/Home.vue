@@ -7,12 +7,12 @@
             <ion-img id='cardinal-logo' src='assets/icon/projectCardinal_logo.svg' />
             <ion-card-content id='top-blurb'>
             <ion-text>
-                Project Cardinal aims to facilitate communication for patients in eye care. This app provides a simple way for ophthalmologists and allied professionals to communicate essential instructions to patients in over 10 languages.
+                Cardinal (cardinal.ophtho.app) provides a simple way for ophthalmologists and allied health professionals to communicate essential instructions to patients in over 10 languages.
             </ion-text>
             </ion-card-content>
         </ion-card>
         <ion-card>
-            <ion-card-content>
+            <ion-card-content class='btn-card'>
                 <ion-grid>
                     <ion-row>
                         <ion-col>
@@ -25,6 +25,20 @@
                             <div class='btn-group'>
                                 <ion-img src='assets/icon/trial_frames.svg' />
                                 <ion-button expand="block" @click="gotoPage('Orthoptics')">Orthoptics</ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class='btn-group'>
+                                <ion-img src='assets/icon/cataract.svg' />
+                                <ion-button expand="block" @click="gotoPage('SlitLamp')">Cataracts</ion-button>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div class='btn-group'>
+                                <ion-img src='assets/icon/neuro.svg' />
+                                <ion-button expand="block" @click="gotoPage('Orthoptics')">Neuro</ion-button>
                             </div>
                         </ion-col>
                     </ion-row>
@@ -74,6 +88,9 @@ export default defineComponent({
 }
 .btn-group {
     padding: 10px;
+}
+.btn-card {
+    padding: 0px;
 }
 
 .copyright {

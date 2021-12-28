@@ -12,7 +12,8 @@
         ></ion-menu-button>
       </ion-buttons>
 
-      <ion-title class="app-title">Project Cardinal</ion-title>
+      <!-- <ion-title class="app-title">Cardinal</ion-title> -->
+      <ion-title class="app-title"><div class="header-box"><img alt="Cardinal logo" class="header-logo"/> <span class="header-text">Cardinal</span></div></ion-title>
     </ion-toolbar>
   </ion-header>
 </template>

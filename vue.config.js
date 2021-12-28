@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
     pwa: {
       name: 'Cardinal',
@@ -5,6 +6,9 @@ module.exports = {
       themeColor: '#4faad1',
       backgroundColor: '#4faad1',
       msTileColor: '#4faad1',
+      manifestOptions: {
+        background_color: "#4faad1"
+      },
       appleMobileWebAppCapable: 'yes',
       appleMobileWebAppStatusBarStyle: 'black-translucent',
       iconPaths: {

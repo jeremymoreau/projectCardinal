@@ -26,7 +26,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/folder/:id',
     component: () => import ('../views/Folder.vue')
-  }
+  },
+  {
+    path: '/install',
+    name: 'SideMenu-Install',
+    component: () => import ('../views/SideMenu-Install.vue')
+  },
 ]
 
 const router = createRouter({

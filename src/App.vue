@@ -1,7 +1,7 @@
 <template>
   <IonApp>
     <IonSplitPane content-id="main-content">
-      <ion-menu content-id="main-content" type="overlay">
+      <ion-menu menu-id="side-menu" content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="inbox-list">
             <ion-list-header>Project Cardinal</ion-list-header>
@@ -15,11 +15,11 @@
                 <ion-icon slot="start" :icon="helpCircleOutline"></ion-icon>
                 <ion-label>About this app</ion-label>
               </ion-item>
-              <ion-item>
+              <!-- <ion-item>
                 <ion-icon slot="start" :icon="mailOutline"></ion-icon>
                 <ion-label>Contact / Suggestions</ion-label>
-              </ion-item>
-              <ion-item>
+              </ion-item> -->
+              <ion-item button="true" @click="gotoPage('SideMenu-Install')">
                 <ion-icon slot="start" :icon="downloadOutline"></ion-icon>
                 <ion-label>Install this app</ion-label>
               </ion-item>
@@ -33,12 +33,13 @@
   </IonApp>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote, IonRouterOutlet, IonSplitPane } from '@ionic/vue';
 import { defineComponent, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { helpCircleOutline, personCircleOutline, mailOutline, downloadOutline } from 'ionicons/icons';
 import 'remixicon/fonts/remixicon.css'
+import { menuController } from "@ionic/vue";
 
 export default defineComponent({
   name: 'App',
@@ -54,6 +55,15 @@ export default defineComponent({
     // IonMenuToggle, 
     IonRouterOutlet, 
     IonSplitPane,
+  },
+  methods: {
+    gotoPage(pageName) {
+      this.$router.push({
+        name: pageName,
+      });
+      menuController.close("side-menu");
+    },
+
   },
   setup() {
     const route = useRoute();
