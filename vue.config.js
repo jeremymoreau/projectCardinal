@@ -20,6 +20,7 @@ module.exports = {
       workboxPluginMode: 'GenerateSW',
       workboxOptions: {
         exclude: [/_redirects/, /.map$/],
+        cleanupOutdatedCaches: true
       }
     }
   }
