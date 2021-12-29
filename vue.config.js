@@ -7,7 +7,8 @@ module.exports = {
       backgroundColor: '#4faad1',
       msTileColor: '#4faad1',
       manifestOptions: {
-        background_color: "#4faad1"
+        background_color: "#4faad1",
+        start_url: '/'
       },
       appleMobileWebAppCapable: 'yes',
       appleMobileWebAppStatusBarStyle: 'black-translucent',
