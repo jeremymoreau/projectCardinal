@@ -19,7 +19,7 @@
                 <ion-icon slot="start" :icon="mailOutline"></ion-icon>
                 <ion-label>Contact / Suggestions</ion-label>
               </ion-item> -->
-              <ion-item button="true" @click="gotoPage('SideMenu-Install')">
+              <ion-item button="true" @click="gotoPage('SideMenuInstall')">
                 <ion-icon slot="start" :icon="downloadOutline"></ion-icon>
                 <ion-label>Install this app</ion-label>
               </ion-item>

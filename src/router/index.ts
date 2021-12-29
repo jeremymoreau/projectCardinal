@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 
+import Home from '../views/Home.vue'
 import SlitLamp from '../views/SlitLamp.vue'
+import Orthoptics from '../views/Orthoptics.vue'
+import SideMenuInstall from '../views/SideMenuInstall.vue'
 
 const routes: Array<RouteRecordRaw> = [
   // {
@@ -11,26 +14,23 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: () => import ('../views/Home.vue')
+    component: Home
   },
   {
     path: '/slit-lamp',
     name: 'SlitLamp',
-    component: () => import ('../views/SlitLamp.vue')
+    component: SlitLamp
   },
   {
     path: '/orthoptics',
     name: 'Orthoptics',
-    component: () => import ('../views/Orthoptics.vue')
+    component: Orthoptics
   },
-  {
-    path: '/folder/:id',
-    component: () => import ('../views/Folder.vue')
-  },
+
   {
     path: '/install',
-    name: 'SideMenu-Install',
-    component: () => import ('../views/SideMenu-Install.vue')
+    name: 'SideMenuInstall',
+    component: SideMenuInstall
   },
 ]
 

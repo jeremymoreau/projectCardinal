@@ -65,7 +65,7 @@ import { defineComponent } from "vue";
 import Header from "./Header.vue";
 import {IonPage, IonContent} from '@ionic/vue';
 export default defineComponent({
-  name: "SideMenu-Install",
+  name: "SideMenuInstall",
   components: {
     Header,
     IonPage,
