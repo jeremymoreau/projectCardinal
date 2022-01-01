@@ -20,48 +20,54 @@
          </ion-card>
          <!-- </ion-button> -->
         <ion-card>
+          <ion-card-header>
+            <ion-card-title class='small-title'>Eye movements</ion-card-title>
+          </ion-card-header>
           <ion-card-content>
                 <ion-grid>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-up-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-up-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-up-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-right')"><i class="ri-arrow-left-up-line nav-icons" v-tippy="{content: 'Look up and to the right', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up')"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Look up', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-left')"><i class="ri-arrow-right-up-line nav-icons" v-tippy="{content: 'Look up and to the left', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-lightbulb-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Look to the right', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-at-light')"><i class="ri-lightbulb-line nav-icons" v-tippy="{content: 'Look straight at the light', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Look to the left', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-down-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-down-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-down-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-right')"><i class="ri-arrow-left-down-line nav-icons" v-tippy="{content: 'Look down and to the right', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Look down', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-left')"><i class="ri-arrow-right-down-line nav-icons" v-tippy="{content: 'Look down and to the left', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-eye-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="ri-close-circle-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>
         </ion-card>
 
         <ion-card>
+          <ion-card-header>
+            <ion-card-title class='small-title'>Head movements</ion-card-title>
+          </ion-card-header>
           <ion-card-content>
                 <ion-grid>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-up-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Tilt your head up', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-user-line nav-icons"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-user-line nav-icons" v-tippy="{content: 'Look straight ahead', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the right', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-down-line nav-icons"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Tilt your head down', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                 </ion-grid>
@@ -75,13 +81,27 @@
 <script lang='js'>
 import { defineComponent } from "vue";
 import Header from "./Header.vue";
-import {IonPage, IonContent} from '@ionic/vue';
+import {IonPage, IonContent, IonSelect, IonSelectOption} from '@ionic/vue';
 export default defineComponent({
-  name: "Orthoptics",
+  name: "SlitLamp",
   components: {
     Header,
     IonPage,
-    IonContent
+    IonContent,
+    IonSelect,
+    IonSelectOption
+  },
+  data() {
+    return {
+      tippyTouchOptions: ['hold', 300],
+      langvalue: 'en'
+    }
+  },
+  mounted() {
+    // disable context menu on nav icons (to not interfere with tooltips)
+    [...document.querySelectorAll(".nav-icons")].forEach( el => 
+    el.addEventListener('contextmenu', e => e.preventDefault())
+    );
   },
 
   methods: {
@@ -90,34 +110,20 @@ export default defineComponent({
         name: pageName,
       });
     },
+
+    playAudio(fileName) {
+      console.log(this.langvalue, ':', fileName)
+      const audioFile = '/assets/audio/' + this.langvalue + '/' + fileName + '.m4a'
+      const audio = new Audio(audioFile)
+      audio.onerror = function(){
+        console.log('Error:', audioFile, 'does not exist' )
+      }
+      audio.play()
+    }
+
   },
 })
 </script>
 
 <style scoped>
-.instructions-card {
-  margin-top: 10px;
-}
-.header-title {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.nav-icons {
-    font-size: 50px;
-    color: var(--ion-color-dark);
-}
-.nav-container {
-    text-align: center;
-    vertical-align: middle;
-}
-.btn-lang {
-    margin: 10px 15px 0px 15px;
-}
-.item-lang {
-    width: 100%;
-}
-ion-select {
-    min-width: 70%;
-    text-align: right;
-}
 </style>

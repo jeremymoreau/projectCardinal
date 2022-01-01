@@ -54,7 +54,7 @@ import { defineComponent } from "vue";
 import Header from "./Header.vue";
 import {IonPage, IonContent, IonSelect, IonSelectOption} from '@ionic/vue';
 export default defineComponent({
-  name: "Cataracts",
+  name: "SlitLamp",
   components: {
     Header,
     IonPage,
@@ -68,11 +68,6 @@ export default defineComponent({
       langvalue: 'en'
     }
   },
-  // setup() {
-  //   const langvalue = {}
-  //   langvalue.value = 'test'
-  //   return { langvalue }
-  // },
   mounted() {
     // disable context menu on nav icons (to not interfere with tooltips)
     [...document.querySelectorAll(".nav-icons")].forEach( el => 
@@ -102,39 +97,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.instructions-card {
-  margin-top: 10px;
-}
-.header-title {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.nav-icons {
-    font-size: 50px;
-    color: var(--ion-color-dark);
-    user-select: none;
-}
-/* do not enable :hover on mobile */
-@media (hover: hover) {
-  .nav-icons:hover {
-  color: var(--ion-color-primary);
-  }
-}
-.nav-icons:active {
-  color: var(--ion-color-primary);
-}
-.nav-container {
-    text-align: center;
-    vertical-align: middle;
-}
-.btn-lang {
-    margin: 10px 15px 0px 15px;
-}
-.item-lang {
-    width: 100%;
-}
-ion-select {
-    min-width: 70%;
-    text-align: right;
-}
 </style>

@@ -41,6 +41,11 @@
                        <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Please place your forehead against the bar', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
+                    <ion-row>
+                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Please move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'></ion-col>
+                    </ion-row>
                 </ion-grid>
             </ion-card-content>
         </ion-card>
@@ -68,11 +73,6 @@ export default defineComponent({
       langvalue: 'en'
     }
   },
-  // setup() {
-  //   const langvalue = {}
-  //   langvalue.value = 'test'
-  //   return { langvalue }
-  // },
   mounted() {
     // disable context menu on nav icons (to not interfere with tooltips)
     [...document.querySelectorAll(".nav-icons")].forEach( el => 
@@ -102,39 +102,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.instructions-card {
-  margin-top: 10px;
-}
-.header-title {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.nav-icons {
-    font-size: 50px;
-    color: var(--ion-color-dark);
-    user-select: none;
-}
-/* do not enable :hover on mobile */
-@media (hover: hover) {
-  .nav-icons:hover {
-  color: var(--ion-color-primary);
-  }
-}
-.nav-icons:active {
-  color: var(--ion-color-primary);
-}
-.nav-container {
-    text-align: center;
-    vertical-align: middle;
-}
-.btn-lang {
-    margin: 10px 15px 0px 15px;
-}
-.item-lang {
-    width: 100%;
-}
-ion-select {
-    min-width: 70%;
-    text-align: right;
-}
 </style>
