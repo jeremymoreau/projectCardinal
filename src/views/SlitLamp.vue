@@ -38,12 +38,12 @@
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Please place your forehead against the bar', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Place your forehead against the bar', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Please move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                 </ion-grid>

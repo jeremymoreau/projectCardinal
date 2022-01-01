@@ -61,9 +61,9 @@
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'><i class="ri-user-line nav-icons" v-tippy="{content: 'Look straight ahead', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the right', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>

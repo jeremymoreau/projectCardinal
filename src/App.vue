@@ -39,6 +39,7 @@ import { defineComponent } from 'vue';
 import { useRoute } from 'vue-router';
 import { helpCircleOutline, personCircleOutline, mailOutline, downloadOutline } from 'ionicons/icons';
 import 'remixicon/fonts/remixicon.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import { menuController } from "@ionic/vue";
 
 export default defineComponent({

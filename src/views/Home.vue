@@ -32,13 +32,13 @@
                         <ion-col>
                             <div class='btn-group'>
                                 <ion-img src='assets/icon/cataract.svg' alt='cataract icon' />
-                                <ion-button expand="block" @click="gotoPage('SlitLamp')">Cataracts</ion-button>
+                                <ion-button expand="block" @click="gotoPage('Cataracts')">Cataracts</ion-button>
                             </div>
                         </ion-col>
                         <ion-col>
                             <div class='btn-group'>
                                 <ion-img src='assets/icon/neuro.svg' alt='cranial nerves icon' />
-                                <ion-button expand="block" @click="gotoPage('Orthoptics')">Neuro</ion-button>
+                                <ion-button expand="block" @click="gotoPage('Neuro')">Neuro</ion-button>
                             </div>
                         </ion-col>
                     </ion-row>
