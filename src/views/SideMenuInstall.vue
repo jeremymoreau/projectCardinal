@@ -4,6 +4,9 @@
 
     <ion-content overflow-scroll="true">
       <ion-card>
+        <ion-card-header>
+          <ion-card-title> Install this App </ion-card-title>
+        </ion-card-header>
         <ion-card-content>
           <ion-text class="md-text"
             ><h3 id="iphone-ios">iPhone (iOS)</h3>
