@@ -3,19 +3,17 @@
       <Header></Header>
 
     <ion-content overflow-scroll="true">
-         <!-- <ion-button class='btn-lang' color='primary' expand="block"> -->
          <ion-item color='none' class='item-lang'  lines=none>
             <ion-label><strong>Language</strong></ion-label>
-            <ion-select multiple="false" value='fr' cancel-text="Cancel" ok-text="Select">
-                <ion-select-option value="en">English</ion-select-option>
-                <ion-select-option value="fr">French (Français)</ion-select-option>
-
+            <ion-select multiple="false" cancel-text="Cancel" ok-text="Select" v-model="langvalue">
+              <ion-select-option value="en">English</ion-select-option>
+              <ion-select-option value="fr">French (Français)</ion-select-option>
             </ion-select>
          </ion-item>
 
          <ion-card>
              <ion-card-content>
-                 Tap on a button to play recording in selected language. Long press (tap and hold) to display what will be played.
+                 Tap on a button to play recording in selected language. Long press (tap and hold) to preview what will be played.
              </ion-card-content>
          </ion-card>
          
