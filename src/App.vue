@@ -7,18 +7,14 @@
             <ion-list-header>Project Cardinal</ion-list-header>
 
             <!-- <ion-menu-toggle> -->
-              <ion-item>
+              <ion-item button="true"  @click="gotoPage('SideMenuAboutUs')">
                 <ion-icon slot="start" :icon="personCircleOutline"></ion-icon>
                 <ion-label>About us</ion-label>
               </ion-item>
-              <ion-item>
+              <ion-item button="true"  @click="gotoPage('SideMenuAboutThisApp')">
                 <ion-icon slot="start" :icon="helpCircleOutline"></ion-icon>
                 <ion-label>About this app</ion-label>
               </ion-item>
-              <!-- <ion-item>
-                <ion-icon slot="start" :icon="mailOutline"></ion-icon>
-                <ion-label>Contact / Suggestions</ion-label>
-              </ion-item> -->
               <ion-item button="true" @click="gotoPage('SideMenuInstall')">
                 <ion-icon slot="start" :icon="downloadOutline"></ion-icon>
                 <ion-label>Install this app</ion-label>
@@ -36,7 +32,7 @@
 <script lang="js">
 import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonRouterOutlet, IonSplitPane } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { useRoute } from 'vue-router';
+// import { useRoute } from 'vue-router';
 import { helpCircleOutline, personCircleOutline, mailOutline, downloadOutline } from 'ionicons/icons';
 import 'remixicon/fonts/remixicon.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -67,7 +63,7 @@ export default defineComponent({
 
   },
   setup() {
-    const route = useRoute();
+    // const route = useRoute();
     
     return { 
       helpCircleOutline, personCircleOutline, mailOutline, downloadOutline

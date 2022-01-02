@@ -44,6 +44,11 @@
                        <ion-col class='nav-container'><i class="far fa-hand-point-up nav-icons" v-tippy="{content: 'Point your finger in the same direction as the horizontal bars of the letter E', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Cover your left eye', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
+                    <ion-row>
+                        <ion-col class='nav-container'></ion-col>
+                        <ion-col class='nav-container'><i class="fas fa-dice nav-icons" v-tippy="{content: 'It\'s ok to guess if you are unsure. Try giving an answer even if you are guessing.', touch: tippyTouchOptions}"></i></ion-col>
+                        <ion-col class='nav-container'></ion-col>
+                    </ion-row>
                     <span class='categ-sub-title'>Visual acuity (CF/HM/LP)</span>
                     <ion-row>
                        <ion-col class='nav-container'><i class="far fa-hand-peace nav-icons" v-tippy="{content: 'How many fingers do you see?', touch: tippyTouchOptions}"></i></ion-col>

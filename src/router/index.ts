@@ -6,6 +6,8 @@ import SlitLamp from '../views/SlitLamp.vue'
 import Orthoptics from '../views/Orthoptics.vue'
 import Cataracts from '../views/Cataracts.vue'
 import Neuro from '../views/Neuro.vue'
+import SideMenuAboutUs from '../views/SideMenuAboutUs.vue'
+import SideMenuAboutThisApp from '../views/SideMenuAboutThisApp.vue'
 import SideMenuInstall from '../views/SideMenuInstall.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -39,6 +41,16 @@ const routes: Array<RouteRecordRaw> = [
     component: Neuro
   },
 
+  {
+    path: '/about-us',
+    name: 'SideMenuAboutUs',
+    component: SideMenuAboutUs
+  },
+  {
+    path: '/about-app',
+    name: 'SideMenuAboutThisApp',
+    component: SideMenuAboutThisApp
+  },
   {
     path: '/install',
     name: 'SideMenuInstall',
