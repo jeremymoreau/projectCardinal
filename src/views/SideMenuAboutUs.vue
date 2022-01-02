@@ -10,7 +10,7 @@
           </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <ion-text class="md-text"> The Cardinal app was developed at the University of Calgary, Section of Ophthalmology.</ion-text>
+          <ion-text class="md-text"> The Cardinal app was developed by the Section of Ophthalmology at the University of Calgary.</ion-text>
 
 
             <div class='md-text' id='main-about-block'>

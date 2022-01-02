@@ -30,7 +30,7 @@
             </ul>
             <h3>Icon Acknowledgments</h3>
             <ul>
-            <li><a target="_blank" rel="noopener" href="https://jeremymoreau.com">Cardinal App Icon by <i>Jeremy Moreau</i> (© 2021 Section of Ophthalmology, University of Calgary)</a></li>
+            <li><a target="_blank" rel="noopener" href="https://jeremymoreau.com">Cardinal App Icon by <i>Jeremy Moreau</i> (© 2022 Section of Ophthalmology, University of Calgary)</a></li>
             <li><a target="_blank" rel="noopener" href="https://github.com/FortAwesome/Font-Awesome">Font-Awesome (Font Awesome Free License)</a></li>
             <li><a target="_blank" rel="noopener" href="https://github.com/Remix-Design/RemixIcon">Remix Icon (Apache License 2.0)</a></li>
             <li><a target="_blank" rel="noopener" href="https://thenounproject.com/icon/slit-lamp-3509301/">Slit Lamp Icon by <i>Nareerat Jaikaew</i> (CC-BY)</a></li>

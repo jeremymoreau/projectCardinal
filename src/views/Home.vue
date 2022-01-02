@@ -46,7 +46,7 @@
             </ion-card-content>
         </ion-card>
         <ion-text class="copyright" color="dark"
-            >© 2021 Section of Ophthalmology,<br>University of Calgary
+            >© 2022 Section of Ophthalmology,<br>University of Calgary
         </ion-text>
     </ion-content>
 
