@@ -21,28 +21,28 @@
           <ion-card-content>
                 <ion-grid>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-up-right')"><i class="ri-arrow-left-up-line nav-icons" v-tippy="{content: 'Look up and to the right', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-up')"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Look up', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-up-left')"><i class="ri-arrow-right-up-line nav-icons" v-tippy="{content: 'Look up and to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-right')"><i class="ri-arrow-left-up-line nav-icons" v-tippy="{content: 'Look up and to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up')"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Look up', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-left')"><i class="ri-arrow-right-up-line nav-icons" v-tippy="{content: 'Look up and to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Look to the right', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-at-light')"><i class="ri-lightbulb-line nav-icons" v-tippy="{content: 'Look straight at the light', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Look to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Look to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-at-light')"><i class="ri-lightbulb-line nav-icons" v-tippy="{content: 'Look straight at the light', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Look to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-down-right')"><i class="ri-arrow-left-down-line nav-icons" v-tippy="{content: 'Look down and to the right', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Look down', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-down-left')"><i class="ri-arrow-right-down-line nav-icons" v-tippy="{content: 'Look down and to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-right')"><i class="ri-arrow-left-down-line nav-icons" v-tippy="{content: 'Look down and to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Look down', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-left')"><i class="ri-arrow-right-down-line nav-icons" v-tippy="{content: 'Look down and to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Place your forehead against the bar', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Place your forehead against the bar', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('chin-forward')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('chin-forward')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                 </ion-grid>
@@ -68,7 +68,7 @@ export default defineComponent({
   },
   data() {
     return {
-      tippyTouchOptions: ['hold', 50],
+      tippyOptions: {touch: ['hold', 20], offset: [0, 25]},
       langvalue: 'en'
     }
   },

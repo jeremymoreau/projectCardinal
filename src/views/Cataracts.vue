@@ -21,15 +21,15 @@
           <ion-card-content>
                 <ion-grid>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('chin-up')"><i class="fas fa-angle-double-up nav-icons" v-tippy="{content: 'Move your chin up', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('follow-light')"><i class="far fa-dot-circle nav-icons" v-tippy="{content: 'Follow the light', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-top-light')"><i class="far fa-arrow-alt-circle-up nav-icons" v-tippy="{content: 'Look at the top light', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('chin-up')"><i class="fas fa-angle-double-up nav-icons" v-tippy="{content: 'Move your chin up', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('follow-light')"><i class="far fa-dot-circle nav-icons" v-tippy="{content: 'Follow the light', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-top-light')"><i class="far fa-arrow-alt-circle-up nav-icons" v-tippy="{content: 'Look at the top light', ...tippyOptions}"></i></ion-col>
                   
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('chin-down')"><i class="fas fa-angle-double-down nav-icons" v-tippy="{content: 'Move your chin down', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-eyes')"><i class="ri-eye-off-line nav-icons" v-tippy="{content: 'Don\'t move your eyes', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-bottom-light')"><i class="far fa-arrow-alt-circle-down nav-icons" v-tippy="{content: 'Look at the bottom light', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('chin-down')"><i class="fas fa-angle-double-down nav-icons" v-tippy="{content: 'Move your chin down', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-eyes')"><i class="ri-eye-off-line nav-icons" v-tippy="{content: 'Don\'t move your eyes', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-bottom-light')"><i class="far fa-arrow-alt-circle-down nav-icons" v-tippy="{content: 'Look at the bottom light', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>
@@ -54,7 +54,7 @@ export default defineComponent({
   },
   data() {
     return {
-      tippyTouchOptions: ['hold', 50],
+      tippyOptions: {touch: ['hold', 20], offset: [0, 25]},
       langvalue: 'en'
     }
   },
