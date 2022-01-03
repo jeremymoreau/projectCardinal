@@ -122,7 +122,7 @@
                     <span class='categ-sub-title'>Motor (V3)</span>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="far fa-laugh-beam nav-icons" v-tippy="{content: 'Open your mouth', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><i class="far fa-laugh-beam nav-icons" v-tippy="{content: 'Open your mouth. Don\'t let me close it.', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <span class='categ-sub-title'>Corneal reflex (V1 afferent, VII efferent)</span>
