@@ -68,7 +68,7 @@ export default defineComponent({
   },
   data() {
     return {
-      tippyOptions: {touch: ['hold', 20], offset: [0, 25]},
+      tippyOptions: {touch: ['hold', 20], offset: [0, 50]},
       langvalue: 'en'
     }
   },
