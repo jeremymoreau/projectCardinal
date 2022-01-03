@@ -42,7 +42,7 @@
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('chin-forward')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                 </ion-grid>

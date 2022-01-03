@@ -55,17 +55,17 @@
                 <ion-grid>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Tilt your head up', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-up')"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Tilt your head up', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-user-line nav-icons" v-tippy="{content: 'Look straight ahead', touch: tippyTouchOptions}"></i></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-straight')"><i class="ri-user-line nav-icons" v-tippy="{content: 'Look straight ahead', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', touch: tippyTouchOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container'></ion-col>
-                       <ion-col class='nav-container'><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Tilt your head down', touch: tippyTouchOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Tilt your head down', touch: tippyTouchOptions}"></i></ion-col>
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                 </ion-grid>
