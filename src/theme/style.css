@@ -174,3 +174,10 @@ ion-select {
 .dark .aboutus-avatar-item {
   background-color: #1c1c1d;
 }
+
+/* Disable magnifier on iOS*/
+body {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+}
