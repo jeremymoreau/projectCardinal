@@ -91,7 +91,7 @@ export default defineComponent({
   },
   data() {
     return {
-      tippyTouchOptions: ['hold', 300],
+      tippyTouchOptions: ['hold', 50],
       langvalue: 'en'
     }
   },
