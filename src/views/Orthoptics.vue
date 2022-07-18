@@ -111,7 +111,7 @@ export default defineComponent({
 
     playAudio(fileName) {
       console.log(this.langvalue, ':', fileName)
-      const audioFile = '/assets/audio/' + this.langvalue + '/' + fileName + '.m4a'
+      const audioFile = '/assets/audio/' + this.langvalue + '/' + fileName + '.mp3'
       const audio = new Audio(audioFile)
       audio.onerror = function(){
         console.log('Error:', audioFile, 'does not exist' )
