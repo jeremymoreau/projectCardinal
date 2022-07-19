@@ -16,16 +16,6 @@
             <div class='md-text' id='main-about-block'>
               <h3> Team </h3>
               <ion-list>
-
-                  <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
-                    <ion-avatar class="aboutus-avatar"><img src="/img/aboutus/aboutus-mak.jpg"/></ion-avatar>
-                    <ion-label text-wrap class='aboutus-label'>
-                       <h3 class="aboutus-title">  Michael Mak, MD </h3>
-                       <p class="aboutus-subtitle"> Ophthalmology Resident </p>
-                       <p class="aboutus-subtitle"> University of Calgary </p>
-                        </ion-label>
-                    
-                  </ion-item>
                   <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
                     <ion-avatar class="aboutus-avatar"><img src="/img/aboutus/aboutus-moreau.jpg"/></ion-avatar>
                     <ion-label text-wrap class='aboutus-label'>
@@ -35,6 +25,24 @@
                         </ion-label>
                     
                   </ion-item>
+                  <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
+                    <ion-avatar class="aboutus-avatar"><img src="/img/aboutus/aboutus-mak.jpg"/></ion-avatar>
+                    <ion-label text-wrap class='aboutus-label'>
+                       <h3 class="aboutus-title">  Michael Mak, MD </h3>
+                       <p class="aboutus-subtitle"> Ophthalmology Resident </p>
+                       <p class="aboutus-subtitle"> University of Calgary </p>
+                        </ion-label>
+                  </ion-item>
+                  <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
+                    <ion-avatar class="aboutus-avatar"><img src="/img/aboutus/aboutus-trask.jpg"/></ion-avatar>
+                    <ion-label text-wrap class='aboutus-label'>
+                       <h3 class="aboutus-title"> William Trask, MD </h3>
+                       <p class="aboutus-subtitle"> Ophthalmology Resident </p>
+                       <p class="aboutus-subtitle"> University of Calgary </p>
+                        </ion-label>
+                  </ion-item>
+                  
+                  
 
               </ion-list>
 
