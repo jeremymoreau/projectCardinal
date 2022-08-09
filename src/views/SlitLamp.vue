@@ -21,29 +21,29 @@
           <ion-card-content>
                 <ion-grid>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-up-right')"><i class="ri-arrow-left-up-line nav-icons" v-tippy="{content: 'Look up and to the right', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-up')"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Look up', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-up-left')"><i class="ri-arrow-right-up-line nav-icons" v-tippy="{content: 'Look up and to the left', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-right', $event)"><i class="ri-arrow-left-up-line nav-icons" v-tippy="{content: 'Look up and to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up', $event)"><i class="ri-arrow-up-line nav-icons" v-tippy="{content: 'Look up', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-up-left', $event)"><i class="ri-arrow-right-up-line nav-icons" v-tippy="{content: 'Look up and to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Look to the right', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-at-light')"><i class="ri-lightbulb-line nav-icons" v-tippy="{content: 'Look straight at the light', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Look to the left', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-right', $event)"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Look to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-at-light', $event)"><i class="ri-lightbulb-line nav-icons" v-tippy="{content: 'Look straight at the light', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-left', $event)"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Look to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('look-down-right')"><i class="ri-arrow-left-down-line nav-icons" v-tippy="{content: 'Look down and to the right', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Look down', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('look-down-left')"><i class="ri-arrow-right-down-line nav-icons" v-tippy="{content: 'Look down and to the left', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-right', $event)"><i class="ri-arrow-left-down-line nav-icons" v-tippy="{content: 'Look down and to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down', $event)"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Look down', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('look-down-left', $event)"><i class="ri-arrow-right-down-line nav-icons" v-tippy="{content: 'Look down and to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('forehead-bar')"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Place your forehead against the bar', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('move-eyes-only', $event)"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('forehead-bar', $event)"><i class="ri-user-4-line nav-icons" v-tippy="{content: 'Place your forehead against the bar', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head', $event)"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('open-eyes')"><i class="ri-eye-2-line nav-icons" v-tippy="{content: 'Open your eyes', ...tippyOptions}"></i></ion-col></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('chin-forward')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('blink')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Blink your eyes', ...tippyOptions}"></i></ion-col></ion-col>
+                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('open-eyes', $event)"><i class="ri-eye-2-line nav-icons" v-tippy="{content: 'Open your eyes', ...tippyOptions}"></i></ion-col></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('chin-forward', $event)"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('blink', $event)"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Blink your eyes', ...tippyOptions}"></i></ion-col></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>
@@ -86,7 +86,10 @@ export default defineComponent({
       });
     },
 
-    playAudio(fileName) {
+    playAudio(fileName, event) {
+      // Set colour of clicked button
+      event.target.style.color = "var(--ion-color-primary)";
+
       console.log(this.langvalue, ':', fileName)
       const audioFile = '/assets/audio/' + this.langvalue + '/' + fileName + '.mp3'
       const audio = new Audio(audioFile)
@@ -94,6 +97,12 @@ export default defineComponent({
         console.log('Error:', audioFile, 'does not exist' )
       }
       audio.play()
+
+      // Reset colour of clicked button to default
+      audio.onended = function() {
+        event.target.style.color = "var(--ion-color-dark)";
+      }
+
     }
 
   },
