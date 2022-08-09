@@ -38,17 +38,24 @@
           </ion-card-header>
           <ion-card-content>
                 <ion-grid>
-                    <span class='categ-sub-title'>Visual acuity (tumbling E chart)</span>
+                    <span class='categ-sub-title'>Visual acuity</span>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('cover-right-eye')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Cover your right eye', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('point-e')"><i class="far fa-hand-point-up nav-icons" v-tippy="{content: 'Point your finger in the same direction as the horizontal bars of the letter E', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('guess')"><i class="fas fa-dice nav-icons" v-tippy="{content: 'It\'s ok to guess if you are unsure. Try giving an answer even if you are guessing.', ...tippyOptions}"></i></ion-col>
+                       
                        <ion-col class='nav-container' @click="playAudio('cover-left-eye')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Cover your left eye', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                        <ion-col class='nav-container' @click="playAudio('')"></ion-col>
-                        <ion-col class='nav-container' @click="playAudio('guess')"><i class="fas fa-dice nav-icons" v-tippy="{content: 'It\'s ok to guess if you are unsure. Try giving an answer even if you are guessing.', ...tippyOptions}"></i></ion-col>
-                        <ion-col class='nav-container' @click="playAudio('')"></ion-col>
+                        <ion-col class='nav-container' @click="playAudio('read-letters')"><i class="fa-solid fa-a nav-icons" v-tippy="{content: 'Read the letters you see', ...tippyOptions}"></i></ion-col>
+                        <ion-col class='nav-container' @click="playAudio('point-e')"><i class="far fa-hand-point-up nav-icons" v-tippy="{content: 'Point your finger in the same direction as the horizontal bars of the letter E', ...tippyOptions}"></i></ion-col>
+                        <ion-col class='nav-container' @click="playAudio('try-again')"><i class="fa-solid fa-repeat nav-icons" v-tippy="{content: 'Try again', ...tippyOptions}"></i></ion-col>
                     </ion-row>
+                     <ion-row>
+                       <ion-col class='nav-container' @click="playAudio('read-top-line')"><i class="fa-solid fa-arrows-up-to-line nav-icons" v-tippy="{content: 'Can you read me the top line', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('read-middle-line')"><i class="fas fa-grip-lines nav-icons" v-tippy="{content: 'Can you read me the middle line', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('read-bottom-line')"><i class="fa-solid fa-arrows-down-to-line nav-icons" v-tippy="{content: 'Can you read me the bottom line', ...tippyOptions}"></i></ion-col>
+                    </ion-row>
+                    
                     <span class='categ-sub-title'>Visual acuity (CF/HM/LP)</span>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('how-many-fingers')"><i class="far fa-hand-peace nav-icons" v-tippy="{content: 'How many fingers do you see? Show me the number with your hands.', ...tippyOptions}"></i></ion-col>
@@ -58,12 +65,12 @@
                     <span class='categ-sub-title'>Visual Fields</span>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('cover-right-eye')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Cover your right eye', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-eyes-look-nose')"><i class="ri-eye-off-line nav-icons" v-tippy="{content: 'Don\'t move your eyes. Look straight at my nose.', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('cover-left-eye')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Cover your left eye', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('how-many-fingers')"><i class="far fa-hand-peace nav-icons" v-tippy="{content: 'How many fingers do you see?', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-eyes-look-nose')"><i class="ri-eye-off-line nav-icons" v-tippy="{content: 'Don\'t move your eyes. Look straight at my nose.', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Don\'t move your head!', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('see-finger')"><i class="far fa-hand-point-left nav-icons" v-tippy="{content: 'Show me a thumbs up as soon as you can see my finger.', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
@@ -80,13 +87,13 @@
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('follow-finger')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Follow my finger with your eyes. Do not move your head.', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('see-double')"><i class="far fa-clone nav-icons" v-tippy="{content: 'Show me a thumbs up if you see double.', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <span class='categ-sub-title'>Strabismus</span>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('fixate-object')"><i class="fas fa-bullseye nav-icons" v-tippy="{content: 'Fixate your vision on the object I\'m pointing at.', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('dont-move-eyes-fixate')"><i class="ri-eye-off-line nav-icons" v-tippy="{content: 'Do not move your eyes. Keep fixating the object I pointed at.', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>
@@ -189,9 +196,9 @@
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('head-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-right')"><i class="ri-arrow-go-forward-line nav-icons nav-icons" v-tippy="{content: 'Turn your head to the right', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('push-hand')"><i class="far fa-hand-paper nav-icons" v-tippy="{content: 'Push against my hand', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('head-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-left')"><i class="ri-arrow-go-back-line nav-icons" v-tippy="{content: 'Turn your head to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>

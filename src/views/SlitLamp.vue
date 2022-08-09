@@ -41,9 +41,9 @@
                        <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('open-eyes')"><i class="ri-eye-2-line nav-icons" v-tippy="{content: 'Open your eyes', ...tippyOptions}"></i></ion-col></ion-col>
                        <ion-col class='nav-container' @click="playAudio('chin-forward')"><i class="ri-user-smile-line nav-icons" v-tippy="{content: 'Move your chin forwards', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('blink')"><i class="ri-eye-close-line nav-icons" v-tippy="{content: 'Blink your eyes', ...tippyOptions}"></i></ion-col></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>

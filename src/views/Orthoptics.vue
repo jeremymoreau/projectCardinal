@@ -40,7 +40,7 @@
                     </ion-row>
                     <ion-row>
                        <ion-col class='nav-container' @click="playAudio('move-eyes-only')"><i class="ri-eye-line nav-icons" v-tippy="{content: 'Please move your eyes only!', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container'><ion-col class='nav-container' @click="playAudio('open-eyes')"><i class="ri-eye-2-line nav-icons" v-tippy="{content: 'Open your eyes', ...tippyOptions}"></i></ion-col></ion-col>
                        <ion-col class='nav-container' @click="playAudio('dont-move-head')"><i class="ri-close-circle-line nav-icons" v-tippy="{content: 'Please don\'t move your head!', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
@@ -59,14 +59,14 @@
                        <ion-col class='nav-container'></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container' @click="playAudio('head-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-tilt-right')"><i class="ri-arrow-left-line nav-icons" v-tippy="{content: 'Turn your head to the right', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('head-straight')"><i class="ri-user-line nav-icons" v-tippy="{content: 'Look straight ahead', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container' @click="playAudio('head-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', ...tippyOptions}"></i></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-tilt-left')"><i class="ri-arrow-right-line nav-icons" v-tippy="{content: 'Turn your head to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                     <ion-row>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-right')"><i class="ri-arrow-go-forward-line nav-icons" v-tippy="{content: 'Turn your head to the right', ...tippyOptions}"></i></ion-col>
                        <ion-col class='nav-container' @click="playAudio('head-down')"><i class="ri-arrow-down-line nav-icons" v-tippy="{content: 'Tilt your head down', ...tippyOptions}"></i></ion-col>
-                       <ion-col class='nav-container'></ion-col>
+                       <ion-col class='nav-container' @click="playAudio('head-left')"><i class="ri-arrow-go-back-line nav-icons" v-tippy="{content: 'Turn your head to the left', ...tippyOptions}"></i></ion-col>
                     </ion-row>
                 </ion-grid>
             </ion-card-content>

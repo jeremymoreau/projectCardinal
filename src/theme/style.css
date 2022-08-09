@@ -48,9 +48,9 @@ ion-card-header {
   color: var(--ion-color-primary);
   }
 }
-.nav-icons:active {
+/* .nav-icons:active {
   color: var(--ion-color-primary);
-}
+} */
 .nav-container {
     text-align: center;
     vertical-align: middle;
