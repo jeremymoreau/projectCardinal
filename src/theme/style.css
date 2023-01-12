@@ -77,7 +77,12 @@ ion-select {
  padding-bottom: 0.5rem;
  color:#333333;
 }
-.dark .md-text p {
+@media (prefers-color-scheme: dark) {
+  .md-text p {
+    color:#e2e2e2;
+   }
+}
+/* .dark .md-text p {
  color: #e2e2e2;
 }
 .md-text li {

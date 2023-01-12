@@ -28,9 +28,9 @@
                   <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
                     <ion-avatar class="aboutus-avatar"><img src="/img/aboutus/aboutus-mak.jpg"/></ion-avatar>
                     <ion-label text-wrap class='aboutus-label'>
-                       <h3 class="aboutus-title">  Michael Mak, MD </h3>
-                       <p class="aboutus-subtitle"> Ophthalmology Resident </p>
-                       <p class="aboutus-subtitle"> University of Calgary </p>
+                       <h3 class="aboutus-title">  Michael Mak, MD, FRCSC </h3>
+                       <p class="aboutus-subtitle"> Retina Fellow </p>
+                       <p class="aboutus-subtitle"> McGill University </p>
                         </ion-label>
                   </ion-item>
                   <ion-item class='aboutus-avatar-item ion-no-padding' lines='none'>
