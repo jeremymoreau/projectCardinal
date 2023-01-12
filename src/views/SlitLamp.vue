@@ -6,8 +6,18 @@
          <ion-item color='none' class='item-lang'  lines=none>
             <ion-label><strong>Language</strong></ion-label>
             <ion-select multiple="false" cancel-text="Cancel" ok-text="Select" v-model="langvalue">
-              <ion-select-option value="en">English</ion-select-option>
-              <ion-select-option value="fr">French (Français)</ion-select-option>
+              <ion-select-option value="en-US">English</ion-select-option>
+              <ion-select-option value="fr-CA">French (Français)</ion-select-option>
+              <ion-select-option value="cmn-CN">Mandarin (官话)</ion-select-option>
+              <ion-select-option value="yue-HK">Cantonese (廣東話)</ion-select-option>
+              <ion-select-option value="ar-XA">Arabic (اَلْعَرَبِيَّةُ)</ion-select-option>
+              <ion-select-option value="de-DE">German (Deutsch)</ion-select-option>
+              <ion-select-option value="it-IT">Italian (Italiano )</ion-select-option>
+              <ion-select-option value="pa-IN">Punjabi (ਪੰਜਾਬੀ)</ion-select-option>
+              <ion-select-option value="pt-PT">Portuguese, Portugal (Português, Portugal)</ion-select-option>
+              <ion-select-option value="pt-BR">Portuguese, Brazil (Português, Brasil)</ion-select-option>
+              <ion-select-option value="es-ES">Spanish (Español)</ion-select-option>
+              <ion-select-option value="fil-PH">Tagalog/Filipino (Tagalog)</ion-select-option>
             </ion-select>
          </ion-item>
 
@@ -69,7 +79,7 @@ export default defineComponent({
   data() {
     return {
       tippyOptions: {touch: ['hold', 20], offset: [0, 50]},
-      langvalue: 'en'
+      langvalue: 'en-US'
     }
   },
   mounted() {
