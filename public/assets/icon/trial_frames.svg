@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <style>
+        path {
+            fill: black;
+        }
+        @media (prefers-color-scheme: dark) {
+            path { fill: white; }
+        }
+    </style>
     <g transform="matrix(1,0,0,1,0.5,0.499941)">
         <path d="M18,34C13.063,34 9,38.063 9,43C9,47.937 13.063,52 18,52C22.937,52 27,47.937 27,43C26.995,38.065 22.935,34.005 18,34ZM18,50C14.16,50 11,46.84 11,43C11,39.16 14.16,36 18,36C21.84,36 25,39.16 25,43C24.996,46.839 21.839,49.996 18,50Z" style="fill-rule:nonzero;"/>
         <path d="M46,34C41.063,34 37,38.063 37,43C37,47.937 41.063,52 46,52C50.937,52 55,47.937 55,43C54.995,38.065 50.935,34.005 46,34ZM46,50C42.16,50 39,46.84 39,43C39,39.16 42.16,36 46,36C49.84,36 53,39.16 53,43C52.996,46.838 49.838,49.996 46,50Z" style="fill-rule:nonzero;"/>
